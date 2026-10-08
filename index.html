@@ -2,11 +2,26 @@
 <html lang="pt-BR">
 
 <head>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Meu App">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Web Player">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="author" content="Guilherme Souza Andrade">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Web Player, Música, Radiohead">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Web player, para ouvir musicas.">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tocador de Músicas</title>
+    <title>Tocador de Música</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <body>
     <div class="container">
         <div class="music-player">
@@ -21,6 +36,12 @@
             <img src="img/image.png" class="song-img">
             <h1>Weird Fishes / Arpeggi</h1>
             <p>Radiohead</p>
+            <!-- Controle de Volume -->
+            <div class="volume-container">
+                <i id="volumeIcon" class="fa-solid fa-volume-high"></i>
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            </div>
+            <!--Audio e Icons-->
             <audio id="song">
                 <source src="audio/Radiohead - Weird Fishes -  by Tobias Stretch-trim.mp3" type="audio/mpeg">
             </audio>
@@ -34,4 +55,5 @@
     </div>
 </body>
 <script src="js/script.js"></script>
+
 </html>
